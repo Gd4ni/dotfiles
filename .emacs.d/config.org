@@ -1,0 +1,26 @@
+#+TITLE: EMACS CONFIGURATION
+
+* Etc
+
+#+BEGIN_SRC emacs-lisp
+  (setq backup-directory-alist '(("." . "~/.emacs.d/saves")))
+#+END_SRC
+* Home_Dir
+#+begin_src emacs-lisp
+  (setq default-directory "~/")
+  (setq command-line-default-directory "~/")
+#+end_src
+
+* Window
+#+BEGIN_SRC emacs-lisp
+  (scroll-bar-mode -1)
+  (tool-bar-mode -1)
+#+END_SRC
+
+
+* OrgMode
+#+BEGIN_SRC emacs-lisp
+  (require 'org-tempo)
+#+END_SRC
+
+* Magit
